@@ -1,0 +1,202 @@
+html{ 
+  scroll-behavior: smooth;
+}
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+body {
+  background-color: #F2F2F2;
+  font-family: 'Zilla Slab', serif;
+  padding: 50px;
+}
+
+.bluehex {
+  color: #306DE3;
+}
+.blackcontainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.dialogue-box {
+  font-size: 22px;
+  line-height: 1.4;
+  color: white;
+  max-width: 435px;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+
+.no-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding:  7px 75px;
+  background: #306DE3;
+  border-radius: 5px;
+  top: 35px;
+  left: 30%;
+  position: relative;
+  border: 1px solid #fff;
+}
+
+.words-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #306DE3;
+  font-size: 18px;
+  padding:  7px 50px;
+  background: #306DE3;
+  border-radius: 5px;
+  top: 90%;
+  left: 80%;
+  position: absolute;
+  border: 1px solid #306DE3;
+  background: transparent;
+}
+
+.finalno-btn {
+  display: inline-block;
+  opacity: 17%;
+  text-decoration: none;
+  color: #306DE3;
+  font-size: 18px;
+  margin-top: 680px;
+  margin-left: 100px;
+  padding: 7px 50px;
+  background: #306DE3;
+  border-radius: 5px;
+  top: 90%;
+  left: 80%;
+  position: absolute;
+  border: 1px solid #306DE3;
+  background: transparent;
+}
+
+.fade-in-text {
+  display: inline-block;
+  font-family: 'Zilla Slab', serif;
+  font-size: 50px;
+  width: 85%;
+  height: 80%;
+  padding-left: 50px;
+  color: black;
+  animation: fadeIn linear 3.5s;
+  -webkit-animation: fadeIn linear 3.5s;
+  -moz-animation: fadeIn linear 3.5s;
+  -o-animation: fadeIn linear 3.5s;
+  -ms-animation: fadeIn linear 3.5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.choose {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 38px;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  font-family: 'Zilla Slab Highlight', cursive;
+  color: f2f2f2;
+}
+
+/* note to self: margin-left originally
+480 but 200 seems to offset whatever hvr-grow
+is doing to the layout */
+
+.thankyou {
+  max-width: 80%;
+  font-size: 38px;
+  margin-top: -600px;
+  margin-left: 200px;
+  padding-bottom: 500px;
+  font-family: 'Zilla Slab Highlight', cursive;
+  color: #FA1AC4;
+}
+
+.sorry {
+  max-width: 80%;
+  font-size: 38px;
+  margin-top: -520px;
+  margin-left: 140px;
+  padding-bottom: 500px;
+  font-family: 'Zilla Slab Highlight', cursive;
+  color: red;
+}
+
+.maybe {
+  max-width: 80%;
+  font-size: 38px;
+  margin-top: -350px;
+  margin-left: 220px;
+  padding-bottom: 500px;
+  font-family: 'Zilla Slab Highlight', cursive;
+  color: #18CD0F;
+}
+
+.feeling {
+  max-width: 80%;
+  font-size: 38px;
+  margin-top: -700px;
+  margin-left: 830px;
+  padding-bottom: 500px;
+  font-family: 'Zilla Slab Highlight', cursive;
+  color: blue;
+}
+
+.bottom {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 300px;
+  color: f2f2f2;
+}
+
+
