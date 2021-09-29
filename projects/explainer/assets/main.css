@@ -2,7 +2,28 @@ html{
   scroll-behavior: smooth;
 }
 
-/* Grow */
+/* Text grow */
+#sname {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    float:right;
+}
+
+#sname a {
+    font-size: 18px;
+    transition: all 500ms;
+}
+    
+#sname a:hover {
+    font-size:88px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size-adjust: 20px;
+    opacity: 1;
+}
+
+
+/* Grow s*/
 .hvr-grow {
     display: inline-block;
     vertical-align: middle;
@@ -29,6 +50,7 @@ body {
 .bluehex {
   color: #306DE3;
 }
+
 .blackcontainer {
   position: fixed;
   top: 0;
@@ -80,11 +102,11 @@ body {
 
 .finalno-btn {
   display: inline-block;
-  opacity: 17%;
+  opacity: 23%;
   text-decoration: none;
   color: #306DE3;
   font-size: 18px;
-  margin-top: 680px;
+  margin-top: 630px;
   margin-left: 100px;
   padding: 7px 50px;
   background: #306DE3;
@@ -198,5 +220,202 @@ is doing to the layout */
   padding-top: 300px;
   color: f2f2f2;
 }
+
+/* Inner page Navigation */
+
+.noDecoration {
+  text-decoration: none;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+.blacklink {
+  color: black;
+}
+
+.redlink {
+  color: red;
+}
+
+.greenlink {
+  color: #18CD0F;
+}
+
+.pinklink {
+  color: #FA1AC4;
+}
+
+.bluelink {
+  color: blue;
+}
+
+nav {
+  text-decoration: none;
+  padding-top: 10%;
+  display: flex;
+  font-family: 'Zilla Slab', serif;
+  justify-content: space-evenly;
+  align-items: center;
+  bottom: 0%;
+  position: relative;
+}
+
+/* Sorry page */
+
+.sorryhl {
+  color: red;
+  font-weight: 700;
+  font-family: 'Zilla Slab Highlight', cursive;
+}
+
+.sorryheader {
+  max-width: 80%;
+  font-size: 80px;
+  font-family: 'Zilla Slab Highlight', cursive;
+  color: red;
+}
+
+.sorryopts {
+  max-width: 80%;
+  font-size: 60px;
+  font-family: 'Zilla Slab', serif;
+  color: red;
+}
+
+.sorryexplain {
+  display: inline-block;
+  max-width: 35%;
+  text-decoration: none;
+  font-size: 25px;
+  margin-left: 60%;
+  padding-right: 15%;
+  margin-top: 10%;
+  font-weight: ;
+}
+
+/* Maybe Page */
+
+.maybehl {
+  color: #18CD0F;
+  font-weight: 700;
+  font-family: 'Zilla Slab Highlight', cursive;
+}
+
+.maybeheader {
+  max-width: 80%;
+  font-size: 80px;
+  font-family: 'Zilla Slab Highlight', cursive;
+  color: #18CD0F;
+}
+
+.maybeopts {
+  max-width: 80%;
+  font-size: 60px;
+  font-family: 'Zilla Slab', serif;
+  color: #18CD0F;
+}
+
+.maybeexplain {
+  display: inline-block;
+  max-width: 35%;
+  text-decoration: none;
+  font-size: 25px;
+  margin-left: 60%;
+  padding-right: 15%;
+  margin-top: 10%;
+}
+
+/*Thank You page */
+
+.thankhl {
+  color: #FA1AC4;
+  font-weight: 700;
+  font-family: 'Zilla Slab Highlight', cursive;
+}
+
+.thankheader {
+  max-width: 80%;
+  font-size: 80px;
+  font-family: 'Zilla Slab Highlight', cursive;
+  color: #FA1AC4;
+}
+
+.thankopts {
+  max-width: 80%;
+  font-size: 60px;
+  font-family: 'Zilla Slab', serif;
+  color: #FA1AC4;
+}
+
+.thankexplain {
+  display: inline-block;
+  max-width: 35%;
+  text-decoration: none;
+  font-size: 25px;
+  margin-left: 60%;
+  padding-right: 15%;
+  margin-top: 10%;
+}
+
+/* Not feeling it page */
+
+.feelinghl {
+  color: blue;
+  font-weight: 700;
+  font-family: 'Zilla Slab Highlight', cursive;
+}
+
+.feelingheader {
+  max-width: 80%;
+  font-size: 80px;
+  font-family: 'Zilla Slab Highlight', cursive;
+  color: blue;
+}
+
+.feelingopts {
+  max-width: 80%;
+  font-size: 60px;
+  font-family: 'Zilla Slab', serif;
+  color: blue;
+}
+
+.feelingexplain {
+  display: inline-block;
+  max-width: 35%;
+  text-decoration: none;
+  font-size: 25px;
+  margin-left: 60%;
+  padding-right: 15%;
+  margin-top: 10%;
+}
+
+/* Final No Page */
+
+.nohl {
+  color: black;
+  font-weight: 700;
+  font-family: 'Zilla Slab Highlight', cursive;
+}
+
+.noheader {
+  max-width: 80%;
+  font-size: 500px;
+  line-height: 10%;
+  font-family: 'Zilla Slab', serif;
+  color: black;
+}
+
+.noexplain {
+  max-width: 60%;
+  text-decoration: none;
+  font-size: 25px;
+  margin-left: 25%;
+  padding-right: 25%;
+  margin-top: 0%;
+}
+
 
 
