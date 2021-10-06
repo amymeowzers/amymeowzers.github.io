@@ -40,6 +40,7 @@ h3 {
 
 h4 {
   font-size: 18px;
+  text-decoration: underline;
   line-height: 0.1;
   font-weight: 300;
   font-family: 'Charm', cursive;
@@ -109,4 +110,16 @@ for an element's width and height.*/
   background-color:  limegreen;
   width: 20vh;
 }
+
+.fixedbutton {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Charm', cursive;
+    position: fixed;
+    bottom: 3vh;
+    right: 6vh; 
+}
+
 </style>
