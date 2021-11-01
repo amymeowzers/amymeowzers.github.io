@@ -1,0 +1,124 @@
+body {
+  background-color: #FAF9F6;
+  font-family: 'Manrope', sans-serif;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.pinkhex {
+  color: #e35aab;
+}
+
+img {
+  padding-top: 20vh;
+  width: 80%;
+}
+
+.opening {
+  margin-top: 20vh;
+  display: inline-block;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 120px;
+  font-weight: 700;
+  width: 85%;
+  height: 80%;
+  padding-left: 3vh;
+  color: black;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(-20px,100px,0px)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+/*Thumb Stuff */
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: white;
+}
+
+/*link hover*/ 
+a {
+  color: #e35aab;
+}
+    
+.break {
+  text-align: center;
+}
+
+.container {
+  margin-top: 50vh;
+  display: flex;
+  padding:20px;
+  background-color: #FAF9F6;
+  min-height: 300px;
+  font-family: 'Manrope', sans-serif;
+  color:  #042135;
+  font-size:  36px;
+  text-align: left;
+}
+
+{box-sizing:  border-box;}
+
+.item {
+  margin: 20px 20px;
+  width: 650px;
+}
+
+.item1 {
+  font-size: 22px;
+}
+
+.item2 {
+  background-color: 
+}
+
+.item3 {
+  background-color: #e35aab;
+  padding-left: 5vh;
+  padding-top: 50vh;
+  width: 100px;
+}
