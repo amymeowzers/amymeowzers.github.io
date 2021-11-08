@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #FAF9F6;
   font-family: 'Manrope', sans-serif;
@@ -13,10 +17,33 @@ h1 {
   color: #e35aab;
 }
 
-img {
-  padding-top: 20vh;
-  width: 80%;
+.offwhitehex {
+  color: #FAF9F6
 }
+
+img {
+  /*padding-top: 20vh;*/
+  width: 100%;
+  border-radius: 10px;
+}
+
+  a img:last-child {
+    display: none;  
+  }
+  a:hover img:last-child {
+    display: block;  
+  }
+  a:hover img:first-child {
+    display: none;  
+}
+
+
+/* Desktop breakpoint */
+/*@media (min-width: 992px) {
+  img {
+      flex-direction:  column;
+  }
+}*/
 
 .opening {
   margin-top: 20vh;
@@ -28,6 +55,60 @@ img {
   height: 80%;
   padding-left: 3vh;
   color: black;
+}
+
+.scroll-btn {
+  display: inline-block;
+  text-decoration: none;
+  transform: translateX(-50%) translateY(-50%);
+  color: #FAF9F6;
+  font-size: 18px;
+  font-weight: 600;
+  padding:  7px 50px;
+  border-radius: 5px;
+  min-width: 300px;
+  top: 80%;
+  left: 50%;
+  position: absolute;
+  background: #e35aab;
+}
+
+.sidebar-scroll-up {
+  display: inline-block;
+  text-decoration: none;
+  color: #FAF9F6;
+  font-size: 15px;
+  padding:  6px 11px;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 6%;
+  right: 1%;
+  background: lightgray;
+}
+
+.sidebar-scroll-down {
+  display: inline-block;
+  text-decoration: none;
+  color: #FAF9F6;
+  font-size: 15px;
+  padding:  6px 11px;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  background: lightgray;
+}
+
+.move-1{
+   animation: bounce 7s ease-in-out 1s infinite;
+}
+
+@keyframes bounce{
+   0%{right:90%;top:80%}
+   25%{right:90%;top:74%}
+   50%{right:90%;top:80%}
+   75%{right:90%;top:74%}
+   100%{right:90%;top:80%}
 }
 
 @keyframes fadeInUp {
@@ -69,17 +150,6 @@ img {
     -webkit-animation-name: fadeInUp;
 }
 
-/*Thumb Stuff */
-.fa {
-  font-size: 50px;
-  cursor: pointer;
-  user-select: none;
-}
-
-.fa:hover {
-  color: white;
-}
-
 /*link hover*/ 
 a {
   color: #e35aab;
@@ -89,6 +159,8 @@ a {
   text-align: center;
 }
 
+/*sophia container */
+
 .container {
   margin-top: 50vh;
   display: flex;
@@ -97,28 +169,159 @@ a {
   min-height: 300px;
   font-family: 'Manrope', sans-serif;
   color:  #042135;
-  font-size:  36px;
+  font-size:  27px;
   text-align: left;
 }
 
 {box-sizing:  border-box;}
 
 .item {
-  margin: 20px 20px;
+margin: 20px 20px;
   width: 650px;
 }
 
-.item1 {
+.item1, {
   font-size: 22px;
+  width: 50%;
 }
 
 .item2 {
-  background-color: 
+  width: 40%;
 }
 
 .item3 {
-  background-color: #e35aab;
-  padding-left: 5vh;
-  padding-top: 50vh;
-  width: 100px;
+  width: 2%;
+}
+
+/* words appearing one-by-one hover effect */
+
+.words span{
+  opacity: 0;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.words-2 span{
+  animation: animateWords 5s linear infinite 0s;
+}
+
+.words span:nth-child(2) {
+  animation-delay: 0.75s;
+  color: #e35aab;
+}
+.words span:nth-child(3) {
+  animation-delay: 1.5s;
+  color: black;
+}
+.words span:nth-child(4) {
+  animation-delay: 2.25s;
+  color: #e35aab
+}
+.words span:nth-child(5) {
+  animation-delay: 3s;
+  color: black;
+}
+
+@keyframes animateWords {
+    0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+    8% { opacity: 1; height: 60px; }
+    19% { opacity: 1; height: 60px; }
+    25% { opacity: 0; height: 60px; }
+    100% { opacity: 0; }
+}
+
+/* invisible ink hover */
+
+.alternate:nth-child(odd) {
+  color: #FAF9F6;
+  transition: all 0.4s linear;
+}
+
+.alternate:nth-child(odd):hover {
+  background-color: black;
+}
+
+/* 
+  You want a simple and fancy tooltip?
+  Just copy all [data-tooltip] blocks:
+*/
+[data-tooltip] {
+  position: relative;
+  z-index: 10;
+}
+
+/* Positioning and visibility settings of the tooltip */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 50%;
+  bottom: calc(100% + 5px); /* 5px is the size of the arrow */
+  pointer-events: none;
+  transition: 0.2s;
+  will-change: transform;
+}
+
+/* The actual tooltip with a dynamic width */
+[data-tooltip]:before {
+  content: attr(data-tooltip);
+  padding: 10px 18px;
+  min-width: 50px;
+  max-width: 300px;
+  width: max-content;
+  width: -moz-max-content;
+  border-radius: 6px;
+  font-size: 20px;
+  background-color: #1982FC;
+  color: #FAF9F6;
+  text-align: center;
+  white-space: pre-wrap;
+  transform: translate(-50%, -5px) scale(0.5);
+}
+
+/* Tooltip arrow */
+[data-tooltip]:after {
+  content: '';
+  border-style: solid;
+  border-width: 5px 5px 0px 5px; /* CSS triangle */
+  border-color: #1982FC transparent transparent transparent;
+  transition-duration: 0s; /* If the mouse leaves the element, 
+                              the transition effects for the 
+                              tooltip arrow are "turned off" */
+  transform-origin: top;   /* Orientation setting for the
+                              slide-down effect */
+  transform: translateX(-50%) scaleY(0);
+}
+
+/* Tooltip becomes visible at hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+/* Scales from 0.5 to 1 -> grow effect */
+[data-tooltip]:hover:before {
+  transition-delay: 0.3s;
+  transform: translate(-50%, -5px) scale(1);
+}
+/* 
+  Arrow slide down effect only on mouseenter (NOT on mouseleave)
+*/
+[data-tooltip]:hover:after {
+  transition-delay: 0.5s; /* Starting after the grow effect */
+  transition-duration: 0.2s;
+  transform: translateX(-50%) scaleY(1);
+}
+
+/* media queries */
+
+@media only screen and (max-width:  800px) {
+body {
+
+  }
+.container {
+  flex-direction: column;
+}
 }

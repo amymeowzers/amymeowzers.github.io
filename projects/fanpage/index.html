@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>girlboss it up!!</title>
-	<link rel="stylesheet" type="text/css" href="assets/main.css">
-	<link rel="icon" href="assets/crown.svg" type="image/x-icon" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>girlboss it up!!</title>
+  <link rel="stylesheet" type="text/css" href="assets/main.css">
+  <link rel="icon" href="assets/crown.svg" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -12,49 +12,91 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- MiniPreview stuff here -->
-
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <link href="https://rawgit.com/shaneapen/Image-Preview-for-Links/master/image_preview_for_links.css" rel="stylesheet"> 
-
-  <link href="main.css" rel="stylesheet">
-  <script src="./jquery.minipreview.js"></script>
-  <script type="text/javascript">
-    $(function() {
-                $('#p1 a').miniPreview({ prefetch: 'pageload' });
-                $('#p2 a').miniPreview({ prefetch: 'parenthover' });
-                $('#p3 a').miniPreview({ prefetch: 'none' });
-            });
-  </script> <script src="https://rawgit.com/shaneapen/Image-Preview-for-Links/master/image_preview_for_links.js"></script>
-
-
 </head>
 <body>
 
 <section class="opening animated animatedFadeInUp fadeInUp">
-  	<span class="pinkhex">#queens</span> 👑 of the modern age 
+    <span class="pinkhex">#queens</span> 👑 of the modern age 
 </section>
 
-  <div class="container">
-    <div class="item item1"><h1>#1. <p>sophi<span class="pinkhex">-yasss</span> amoruso</p></h1>
+<div class="sidebar-scroll-up" onclick="scrollWinUp()">
+  <span class="offwhitehex">⬆</span>
+</div>
 
+<div class="sidebar-scroll-down" onclick="scrollWinDown()">
+  <span class="offwhitehex">⬇</span>
+</div>
+
+<div class = "scroll-btn move-1">
+<a href="#scrolled"> <span class="offwhitehex">let's meet them! starting with...⬇ </span></a>
+</div>
+
+  <div class="container" id = "scrolled">
+    <div class="item item1 words words-2"><h1><p class="pinkhex"><u>no. 1</u></span><br>
+        <span class="motion">sophi-</span><span class="motion">*yass*</span>
+        <span class="motion">amoruso ♡</span></h1>
     <p>
-    	sophia's, like, the one who started it all. 
+      sophia's, like, the one who started it all. 
     </p>
-    <p id = "p1"> she founded this hip fashion company called <a href="https://www.nastygal.com/">nasty gal</a> and it made her super, duper rich. rich enough that forbes even named her one of <a href ="https://www.forbes.com/sites/clareoconnor/2016/06/01/nasty-gal-sophia-amoruso-richest-women-net-worth/?sh=60b7da735774">THE richest </a> self-made women in the world.
+    <p> she founded this hip fashion company called <a href="https://www.nastygal.com/"data-tooltip= "(which filed bankruptcy in 2016 💀)">nasty gal</a> and it made her super, duper rich. rich enough that forbes even named her one of <a href ="https://www.forbes.com/sites/clareoconnor/2016/06/01/nasty-gal-sophia-amoruso-richest-women-net-worth/?sh=60b7da735774" data-tooltip= "net worth: 280 million 💅">THE richest </a> self-made women in the world.
 
-    <p>she penned a memoir in 2014 on her success called <span class="pinkhex">#GIRLBOSS</span>, which is where the whole "girlboss" thing comes from.</p>
+    <p>in 2014, she penned a memoir on nasty gal and her success called <a href= "https://www.netflix.com/title/80115671" data-tooltip= "#She-E-O girl power!"><i>#GIRLBOSS</i></a> , which is where the whole "girlboss" trend comes from.</p>
+        <section class="alternate">
+        (i hear she got cancelled though? for, like, toxic work culture and firing pregnant employees? 😱 shocker!)
+    </section>
+      </div>
 
-    	<p id = "p1">
-    		i hear she got cancelled though? for, like, <a href ="https://www.nytimes.com/2016/11/11/fashion/nasty-gal-sophia-amoruso-bankruptcy.html">toxic work culture</a> and <a href ="https://www.nytimes.com/2016/11/11/fashion/nasty-gal-sophia-amoruso-bankruptcy.html">firing pregnant employees</a>? 😱 shocker!!
-    	</p>
-    	</div>
-    <div class="item item2"><img src="assets/sophiyass.jpg" alt="sophiyasss amaruso">
+    <div class="item item2">
+      <a>
+        <img src="assets/sophia.jpg" alt="sophia amaruso">
+        <img src="assets/sophiyass.jpg" alt="sophiyasss amaruso">
+      </a>
     </div>
-    <div class="item item3"><i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></div>
+  </div>
+
+
+  <div class="container">
+      <div class="item item2">
+      <a>
+        <img src="assets/steph.jpeg" alt="steph korey">
+        <img src="assets/stephbw.jpg" alt="stephftw korey">
+      </a>
+    </div>
+    <div class="item item1 words words-2"><h1><p class="pinkhex"><u>no. 2</u></span><br>
+        <span class="motion">steph-</span><span class="motion">ftw 🙌</span>
+        <span class="motion">korey</span></h1>
+    <p>
+      steph's the <a href="https://www.nytimes.com/2020/01/13/business/steph-korey-away.html"data-tooltip= "(oops 💖 i guess ex-CEO now)">founder and CEO*</a> of luxury luggage brand <i>away</i>. she started meeting potential suppliers while she was still a student at columbia business school— talk about real girlbossing behavior!
+    </p>
+            <section class="alternate">
+        (she had to <i>steph</i>-down after bullying employees on SLACK of all things, but it's cool 😊 she went back to being CEO for a solid 5 months before twitter bullied her back off again) <a href="https://twitter.com/stephkorey">✨ check out her twitter here ✨</a>
+
+    </section>
+      </div>
+  </div>
+
+    <div class="container">
+    <div class="item item1 words words-2"><h1><p class="pinkhex"><u>no. 3</u></span><br>
+        <span class="motion">rachel</span><span class="motion"> hollis</span>
+        <span class="motion">☟ @msrachelhollis</span></h1>
+    <p>
+      and we can't forget the one, the only, the <a href= "" data-tooltip= "(no, like actually? she's written at least three books on it 🤭)">queen of self help</a>— rachel hollis herself :)
+    </p>
+    <p> a mom of four, her whole thing is "authenticity": she works, she likes to jog and drink La Croix and she puts out <a href= "" data-tooltip= "'if my life is relatable to most people, i’m doing it wrong' - rachel hollis">#relatable</a> content for girls like her, just living their lives.
+    </p>
+
+    <p>so far, she's hit over <a href= "" data-tooltip= "+ 30 mil. views on Tiktok 📱">1.7 million followers on Instagram</a> alone— and that's all from being her own, authentic self. keep it, up rachel 👑 💕</p>
+        <section class="alternate">
+        (let's just ignore the fact that she compared her authentic self to harriet tubman, ok? ok. 🚶‍♂️)
+    </section>
+      </div>
+
+    <div class="item item2">
+      <a>
+        <img src="assets/rachel.jpeg" alt="rachel hollis">
+        <img src="assets/rachelbw.jpg" alt="msrachelhollis">
+      </a>
+    </div>
   </div>
 
 <script type="text/javascript" src="main.js"></script>
