@@ -1,0 +1,279 @@
+body {
+  background: black;
+}
+
+img {
+  width: 70%;
+}
+
+ a, a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #01a4e9;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.bluehex {
+  color: #01a4e9;
+}
+
+.whitehex {
+  color: white;
+}
+
+.gif {
+  position: absolute;
+  right: -15vh;
+  bottom: 13vh;
+  -webkit-animation: fadeIn ease-in 10s;
+  -moz-animation: fadeIn ease-in 10s;
+  -o-animation: fadeIn ease-in 10s;
+  -ms-animation: fadeIn ease-in 10s;
+}
+
+.fade-in-text {
+  display: inline-block;
+  font-family: 'Zilla Slab', serif;
+  font-size: 50px;
+  width: 85%;
+  height: 80%;
+  padding-left: 8vh;
+  padding-bottom: 0;
+  color: white;
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
+}
+
+.fade-in-text-2 {
+  display: inline-block;
+  font-family: 'Zilla Slab', serif;
+  font-size: 50px;
+  padding-top: 19vh;
+  padding-left: 8vh;
+  color: white;
+  animation: fadeIn ease-in 4s;
+  -webkit-animation: fadeIn ease-in 4s;
+  -moz-animation: fadeIn ease-in 4s;
+  -o-animation: fadeIn ease-in 4s;
+  -ms-animation: fadeIn ease-in 4s;
+}
+
+.fade-in-text-dropdown {
+  animation: fadeIn ease-in 4s;
+  -webkit-animation: fadeIn ease-in 4s;
+  -moz-animation: fadeIn ease-in 4s;
+  -o-animation: fadeIn ease-in 4s;
+  -ms-animation: fadeIn ease-in 4s;
+}
+
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+/* Dropdown Button */
+.dropbtn {
+  font-family: 'Zilla Slab', serif;
+  background-color: #01a4e9;
+  color: white;
+  padding: 30px;
+  font-size: 50px;
+  line-height: 0.6;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: absolute;
+  right: 15vh;
+  top: 44vh;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  font-family: 'Zilla Slab', serif;
+  font-size: 40px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #4883ae;}
+
+.pulsating-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 30px;
+  height: 30px;
+}
+.pulsating-circle:before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 300%;
+  height: 300%;
+  box-sizing: border-box;
+  margin-left: -100%;
+  margin-top: -100%;
+  border-radius: 45px;
+  background-color: #01a4e9;
+  -webkit-animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+          animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+.pulsating-circle:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  -webkit-animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+          animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+}
+
+@-webkit-keyframes pulse-ring {
+  0% {
+    transform: scale(0.33);
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.33);
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes pulse-dot {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+@keyframes pulse-dot {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.move-1{
+   animation: bounce 20s ease-in-out 1s infinite;
+}
+
+@keyframes bounce{
+   0%{right:50%;top:50%}
+   25%{right:100%;top:15%}
+   50%{right:50%;top:50%}
+   75%{right:0;top:15%}
+   100%{right:50%;top:50%}
+}
+
+.move-2{
+   animation: bounce2 20s ease-in-out 1s infinite;
+}
+
+@keyframes bounce2{
+   0%{right:50%;top:50%}
+   25%{right:100%;top:85%}
+   50%{right:50%;top:50%}
+   75%{right:0;top:85%}
+   100%{right:50%;top:50}
+}
+
+.move-3{
+   animation: bounce3 20s ease-in-out 1s infinite;
+}
+
+@keyframes bounce3{
+   0%{right:100%;top:50%}
+   25%{right:50%;top:50%}
+   50%{right:0%;top:50%}
+   75%{right:50;top:50%}
+   100%{right:100%;top:50%}
+}
+
+.move-4{
+   animation: bounce4 20s ease-in-out 1s infinite;
+}
+
+@keyframes bounce4{
+   0%{right:0%;top:50%}
+   25%{right:50%;top:50%}
+   50%{right:100%;top:50%}
+   75%{right:50;top:50%}
+   100%{right:0%;top:50%}
+}
