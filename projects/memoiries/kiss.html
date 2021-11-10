@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>(memoir)ies</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<section class="fade-in-text">
+  <p>
+    Now GENERATING...
+  </p>
+</section>
+<section class="fade-in-text-2">
+  <p>
+    <a href="#" onclick="randomSite();"><u>Gesture:</u></a> HOW TO "KISS"
+  </p>
+</section>
+<div class="gif">
+        <img src="assets/affection.gif" alt="affectionate gesture">
+  </div>
+
+
+<a href="index.html" div class="pulsating-circle"></div></a>
+<!-- <div class="pulsating-circle move-3"></div>
+<div class="pulsating-circle move-4"></div>
+-->
+
+<script>
+    var sites = [
+        'emotion.html',
+        'sadness.html',
+        'gesture.html',
+        'grieve.html',
+    ];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+</script>
+
+</body>
+</html>
