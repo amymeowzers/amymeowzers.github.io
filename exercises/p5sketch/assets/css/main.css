@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  display: flex;
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+
+/* i'm using the z index to move the slider on top of the container */
+.container {
+  z-index: 0;
+}
+
+
+.slider {
+  z-index: 1;
+  margin-top: 2em;
+  border: 0px solid black;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 200px; /* Specified height */
+    height: 50px; /* Specified height */
+    background: white; /* background color */
+    outline: none; /* Remove outline */
+    opacity: 0.4; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: all .2s;
+  }
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+  border: 0px dotted black;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 50px; /* Set a specific slider handle width */
+  height: 50px; /* Slider handle height */
+  border-radius: 50%; /* Make it a circle */
+  background: orangered; /*  background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 50px; /* Set a specific slider handle width */
+  height: 50px; /* Slider handle height */
+  background: orangered;
+  cursor: pointer; /* Cursor on hover */
+}
+
+/* Color slider */
+
+.colorslider {
+  z-index: 1;
+  margin-top: 2em;
+  border: 0px solid black;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 200px; /* Specified height */
+    height: 50px; /* Specified height */
+    background: white; /* background color */
+    outline: none; /* Remove outline */
+    opacity: 0.4; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: all .2s;
+  }
+
+/* Mouse-over effects */
+.colorslider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+  border: 0px dotted black;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.colorslider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 50px; /* Set a specific slider handle width */
+  height: 50px; /* Slider handle height */
+  border-radius: 50%; /* Make it a circle */
+  background: limegreen; /*  background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.colorslider::-moz-range-thumb {
+  width: 50px; /* Set a specific slider handle width */
+  height: 50px; /* Slider handle height */
+  background: limegreen;
+  cursor: pointer; /* Cursor on hover */
+}
+
+/* Stroke Weight Slider */
+.weightslider {
+  z-index: 1;
+  margin-top: 2em;
+  border: 0px solid black;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 200px; /* Specified height */
+    height: 50px; /* Specified height */
+    background: white; /* background color */
+    outline: none; /* Remove outline */
+    opacity: 0.4; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: all .2s;
+  }
+
+/* Mouse-over effects */
+.weightslider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+  border: 0px dotted black;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.weightslider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 50px; /* Set a specific slider handle width */
+  height: 50px; /* Slider handle height */
+  border-radius: 50%; /* Make it a circle */
+  background: royalblue; /*  background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.weightslider::-moz-range-thumb {
+  width: 50px; /* Set a specific slider handle width */
+  height: 50px; /* Slider handle height */
+  background: royalblue;
+  cursor: pointer; /* Cursor on hover */
+}
